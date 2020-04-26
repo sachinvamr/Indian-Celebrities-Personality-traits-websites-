@@ -97,4 +97,4 @@ Names=names+names2
 p=profiles_text1+profiles_text2
 Images=images_array+images_array2
 df=pd.DataFrame({'Images':Images,'Names':Names,'Personality traits':p})
-df.to_csv('G:/Explore ML (amrita)/assignment_bipolar/celebrities_dataset.csv',index=False)
+df.to_csv('celebrities_dataset.csv',index=False)
