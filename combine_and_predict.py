@@ -50,4 +50,5 @@ df6=pd.merge(df4,df5,how='inner',left_index=True,right_index=True)
 df6=df6.drop('Names_y',axis=1)#it contains extra name
 df7=pd.merge(df,df6,how='inner',left_index=True,right_index=True)
 df7=df7.drop(['Unnamed: 0','Names_x','Personality traits'],axis=1)
+df7=df7.bio.dropna(axis=0)
 df7.to_csv('celebrities_personalityTraits_dataset.csv.csv',index=False)
