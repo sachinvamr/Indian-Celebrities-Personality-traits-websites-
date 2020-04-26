@@ -17,6 +17,6 @@ Columns description in "celebrities_personalityTraits_dataset.csv" <br />
 1)'Names' :Name of the celebrity <br />
 2)'bio' :to predict Personality traits <br />
 3)'Images' :Images of the celebrity in numpy array form (can be converted in to image by 'cv2.imdecode(image, cv2.IMREAD_COLOR)' in python) <br />
-4)Rest of the columns are the characteristics: 1) columns without 'raw' appended at last is the data comparing with a sample population
-                                             2) columns with 'raw' appended at last is the data without comparing with a sample                                                         population
+4)Rest of the columns are the characteristics: a) columns without 'raw' appended at last is the data comparing with a sample population
+                                             b) columns with 'raw' appended at last is the data without comparing with a sample                                                         population
 
