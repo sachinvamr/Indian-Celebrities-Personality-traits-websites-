@@ -4,7 +4,7 @@ import csv
 import pandas as pd
 
 
-df=pd.read_csv('G:/Explore ML (amrita)/assignment_bipolar/test.csv')
+df=pd.read_csv('test.csv')
 
 #change
 api_key='your api key'
@@ -50,4 +50,4 @@ df6=pd.merge(df4,df5,how='inner',left_index=True,right_index=True)
 df6=df6.drop('Names_y',axis=1)#it contains extra name
 df7=pd.merge(df,df6,how='inner',left_index=True,right_index=True)
 df7=df7.drop(['Unnamed: 0','Names_x','Personality traits'],axis=1)
-df7.to_csv('G:/Explore ML (amrita)/assignment_bipolar/celebrities_personalityTraits_dataset.csv.csv',index=False)
+df7.to_csv('celebrities_personalityTraits_dataset.csv.csv',index=False)
