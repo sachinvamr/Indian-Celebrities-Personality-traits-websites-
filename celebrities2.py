@@ -66,7 +66,7 @@ for i in bio_link:
 Names=names+names2
 b=bio+bio2
 df1=pd.DataFrame({'Names':Names,'bio':b})
-df2=pd.read_csv('G:/Explore ML (amrita)/assignment_bipolar/celebrities_dataset.csv')
+df2=pd.read_csv('celebrities_dataset.csv')
 df1.set_index('Names',inplace=True)
 df2.set_index('Names',inplace=True)
 final=pd.merge(df1,df2,how='left',left_index=True,right_index=True)
@@ -76,4 +76,4 @@ final.reset_index(inplace=True)
 final.drop_duplicates(subset='Names',keep='first',inplace=True)
 final.reset_index(inplace=True)
 final.loc[203:,'bio']=final.loc[203:,'Personality traits']
-final.to_csv('G:/Explore ML (amrita)/assignment_bipolar/test.csv',index=False)
+final.to_csv('test.csv',index=False)
